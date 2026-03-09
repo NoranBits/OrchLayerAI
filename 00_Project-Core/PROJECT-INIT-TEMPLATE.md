@@ -20,6 +20,7 @@ By keeping your implementation in `/src` separate from the `docs/` and `00_Proje
 ## Visualization of Separation
 
 ```mermaid
+%%{init: {'theme': 'dark'}}%%
 graph TD
     Root[Repo Root] --> Control[Control Plane: OrchLayer]
     Root --> Project[Project Code: Implementation]

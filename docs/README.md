@@ -7,6 +7,17 @@ This directory hosts the "Project Pulse" — the living files that track workflo
 ## Tracking Synergy
 
 ```mermaid
+%%{init: {
+  'theme': 'base',
+  'themeVariables': {
+    'primaryColor': '#6366f1',
+    'primaryTextColor': '#fff',
+    'primaryBorderColor': '#4f46e5',
+    'lineColor': '#818cf8',
+    'secondaryColor': '#ec4899',
+    'tertiaryColor': '#06b6d4'
+  }
+}}%%
 graph LR
     MAP[REPO-MAP.md] --> Flow[How it works]
     FLOW[WORKFLOW.md] --> Status[Where we are]

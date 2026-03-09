@@ -7,6 +7,18 @@ Contains platform-specific configuration and instruction files for AI coding env
 ## Visualized Adapters
 
 ```mermaid
+%%{init: {
+  'theme': 'base',
+  'themeVariables': {
+    'primaryColor': '#6366f1',
+    'primaryTextColor': '#fff',
+    'primaryBorderColor': '#4f46e5',
+    'lineColor': '#818cf8',
+    'secondaryColor': '#ec4899',
+    'tertiaryColor': '#06b6d4',
+    'nodePadding': '10'
+  }
+}}%%
 mindmap
   root((Official Adapters))
     IDC[IDE Configurations]

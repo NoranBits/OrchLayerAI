@@ -7,6 +7,17 @@ Focuses on AI environments that rely on file-name conventions or root-level inst
 ## Comparison Map
 
 ```mermaid
+%%{init: {
+  'theme': 'base',
+  'themeVariables': {
+    'primaryColor': '#6366f1',
+    'primaryTextColor': '#fff',
+    'primaryBorderColor': '#4f46e5',
+    'lineColor': '#818cf8',
+    'secondaryColor': '#ec4899',
+    'tertiaryColor': '#06b6d4'
+  }
+}}%%
 graph LR
     A[Cursor] --> B[.cursorrules]
     C[Windsurf] --> D[.windsurfrules]
