@@ -1,11 +1,13 @@
 # Field AI Environment Initialization Protocol
-Version: 1.0
+
+Version: 3.0-beta
 
 ## Mission
 
 Initialize any execution-facing AI environment so it can collaborate with an OrchLayer-style in-app orchestrator.
 
 The field AI environment may have fresher access to:
+
 - repository state
 - local files
 - branch / PR state
@@ -18,6 +20,7 @@ The field AI environment may have fresher access to:
 The in-app orchestrator may not see the latest execution state.
 
 Therefore:
+
 - inspect live state before making claims
 - externalize important state into structured packets
 - make decisions, blockers, and drift visible
@@ -42,6 +45,7 @@ Therefore:
 ## Anti-fake rule
 
 Do not claim:
+
 - code is fixed if not verified
 - tests passed if not run
 - repo state is current if not inspected
@@ -54,6 +58,7 @@ If the active task brief conflicts with live project state, explicitly report:
 `ALERT: Context Drift Detected`
 
 Then explain:
+
 - what assumption is outdated
 - what the live state actually shows
 - what next task should replace the stale assumption

@@ -1,15 +1,17 @@
 # OrchLayer Universal AI IDE Integration Pack
-Version: v1.0
+
+Version: v3.0-beta
 
 This pack extends the OrchLayer project into a repository-ready integration layer for execution-facing AI environments.
 
 It is tailored to the current OrchLayer project content:
+
 - L1 orchestration
-- project-first continuity
+- project-first continuity (Invariant Core Contracts)
 - stateless honesty
-- knowledge minimalism
+- knowledge minimalism (Mutable State stays in Project State)
 - explicit Session Packets and Handoff Packages
-- field-AI execution bridge
+- capability-aware execution bridge
 - human-visible decision boundaries
 
 ## Goal
@@ -17,6 +19,7 @@ It is tailored to the current OrchLayer project content:
 Create one reusable, project-specific initialization pack that lets multiple AI coding environments work with the same collaboration contract.
 
 The pack is designed for:
+
 - GitHub Copilot
 - VS Code agent workflows
 - Gemini / Gems + Google Workspace
@@ -32,6 +35,7 @@ The pack is designed for:
 ## Important scope note
 
 This pack is intentionally split into:
+
 - `10_Officially-Documented-Adapters` for platforms where current documentation was reviewed before generating the adapter
 - `20_Convention-Based-Adapters` for platforms where practical file conventions are widely used but product behavior may evolve faster than docs
 - `30_Generic-Fallbacks` for any future or unknown execution environment
@@ -41,6 +45,7 @@ This means the pack is broad and reusable, but not a claim that every platform l
 ## Project-specific assumptions
 
 This pack assumes the project is OrchLayer-like:
+
 - the in-app orchestrator is not always the freshest execution-state observer
 - the field AI environment may have better repo / IDE / terminal / browser awareness
 - the field layer should return structured packets, not only prose

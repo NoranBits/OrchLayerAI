@@ -1,6 +1,6 @@
 # AGENTS-GIT-MANAGER.md
 
-Version: 1.0
+Version: 3.0-beta
 Purpose: Specialized AI instructions for Git change monitoring and summarization.
 
 ## Role

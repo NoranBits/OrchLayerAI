@@ -1,0 +1,56 @@
+# Walkthrough - OrchLayer v3.0-beta Migration
+
+I have successfully transitioned the OrchLayer integration pack from v3.0-alpha to v3.0-beta. This migration normalizes core contracts, separates mutable state from stable reference, and establishes environment-specific capability manifests.
+
+## Core Changes
+
+### 1. Normalized Core Contracts
+I have mirrored the normalized contracts into `00_Project-Core/`. These are now the canonical source of truth for all adapters.
+
+````carousel
+```json
+// FIELD-AI-SESSION-PACKET-SCHEMA.json
+{
+  "schema_type": "Session-Packet",
+  "version": "3.0-beta",
+  "session_frame": { ... }
+}
+```
+<!-- slide -->
+```json
+// FIELD-AI-HANDOFF-SCHEMA.json
+{
+  "transfer_frame": {
+    "handoff_reason": "string",
+    "expected_artifact": "string"
+  }
+}
+```
+<!-- slide -->
+```json
+// FIELD-AI-CAPABILITY-MANIFEST-SCHEMA.json
+{
+  "schema_type": "Capability-Manifest",
+  "capabilities": { ... }
+}
+```
+````
+
+### 2. Documentation & Versioning
+- **Root README**: Updated to version **v3.0-beta** with architecture refinements.
+- **Decision Log**: Added **ADR-012** documenting the standardization.
+- **Consistency**: Normalized all version markers in [AGENTS.md](file:///c:/dev/git-src/OrchLayerAI/AGENTS.md) and core templates to **3.0-beta**.
+
+## Verification Results
+
+### Automated Checks
+- **Schema Validation**: All JSON schemas follow valid draft-07 structure.
+- **Genericness**: Root schemas contain no platform-specific (e.g., "gemini") hardcoding, ensuring portability.
+- **Version Check**: All root and core files consistently report version **3.0-beta**.
+
+### Manual Verification
+- **Changelog**: Updated [docs/CHANGELOG-TRACKER.md](file:///c:/dev/git-src/OrchLayerAI/docs/CHANGELOG-TRACKER.md) with the migration entry.
+- **File Structure**: Verified that all new `FIELD-AI-*` schemas are present in `00_Project-Core/`.
+
+## Legacy Support
+- Added explicit rules for wrapping legacy session packets into the new `session_frame`.
