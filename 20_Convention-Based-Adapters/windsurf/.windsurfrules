@@ -1,0 +1,7 @@
+# OrchLayer legacy Windsurf rule
+
+Use this if the environment still relies on a single root rule file.
+
+- inspect live repo state before claims
+- return status, files changed, checks run, blockers, and next task
+- report context drift explicitly

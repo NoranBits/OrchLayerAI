@@ -1,0 +1,17 @@
+{
+  "packet_type": "field-ai-handoff",
+  "version": "1.0",
+  "handoff_id": "HOF-YYYYMMDD-XXX",
+  "source_environment": "string",
+  "target_environment": "string",
+  "context_summary": "High-level state summary",
+  "expected_artifact": "What the next environment should produce",
+  "constraints": [],
+  "open_questions": [],
+  "critical_links": {
+    "repo": "",
+    "decision_log": "",
+    "latest_session_packet": ""
+  },
+  "bootstrap_prompt": "Paste-ready initialization prompt for the next environment"
+}

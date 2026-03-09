@@ -1,0 +1,36 @@
+{
+  "packet_type": "antigravity-return",
+  "version": "1.0",
+  "status": "completed|partial|blocked|needs-decision|needs-review|handoff-ready",
+  "objective": "Task executed inside Antigravity",
+  "environment": {
+    "platform": "antigravity",
+    "workspace": "",
+    "manager_view_used": false,
+    "editor_view_used": true,
+    "multi_agent_used": false
+  },
+  "agent_activity": [],
+  "artifacts": {
+    "plans": [],
+    "task_lists": [],
+    "screenshots": [],
+    "browser_recordings": [],
+    "verification_results": []
+  },
+  "state_summary": {
+    "files_inspected": [],
+    "files_changed": [],
+    "checks_run": [],
+    "checks_result": "pass|fail|mixed|not-run"
+  },
+  "blockers": [],
+  "questions_for_orchestrator": [],
+  "questions_for_user": [],
+  "recommended_next_tasks": [],
+  "recommended_handoff": {
+    "needed": false,
+    "target": "",
+    "reason": ""
+  }
+}
