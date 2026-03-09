@@ -1,6 +1,6 @@
 {
   "packet_type": "antigravity-return",
-  "version": "1.0",
+  "version": "3.1",
   "status": "completed|partial|blocked|needs-decision|needs-review|handoff-ready",
   "objective": "Task executed inside Antigravity",
   "environment": {

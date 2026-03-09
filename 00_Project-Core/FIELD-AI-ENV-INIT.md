@@ -1,6 +1,6 @@
 # Field AI Environment Initialization Protocol
 
-Version: 3.0-beta
+Version: v3.1
 
 ## Mission
 

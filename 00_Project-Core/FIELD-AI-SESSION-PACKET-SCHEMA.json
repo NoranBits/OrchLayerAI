@@ -12,7 +12,7 @@
     "properties": {
         "$schema_version": {
             "type": "string",
-            "const": "3.0-beta"
+            "const": "3.1"
         },
         "schema_type": {
             "type": "string",

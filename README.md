@@ -1,6 +1,6 @@
 # OrchLayer Universal AI IDE Integration Pack
 
-Version: v3.0-beta
+Version: v3.1
 
 This pack extends the OrchLayer project into a repository-ready integration layer for execution-facing AI environments.
 

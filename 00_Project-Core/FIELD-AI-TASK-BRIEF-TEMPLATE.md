@@ -2,7 +2,7 @@
 
 ```yaml
 brief_type: field-ai-task-brief
-version: 3.0-beta
+version: 3.1
 project_id: PROJ-ORCH-V3
 objective: "Describe the task to execute"
 active_scope: "What is in scope and out of scope"

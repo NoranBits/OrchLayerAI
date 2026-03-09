@@ -32,13 +32,25 @@ For each important folder, document:
 - Dependencies: Depends on `00_Project-Core`.
 - Notes: Classification: implementation / overlay.
 
+### /01_Project-State
+
+- Purpose: Mutable repository-specific state (profiles, manifests, active plans).
+- Main contents: REPO-PROFILE.yaml, CAPABILITY-MANIFEST.current.json.
+- Notes: Classification: project state.
+
+### /02_Session-Packets
+
+- Purpose: Machine-readable continuity checkpoints.
+- Main contents: FIELD-AI-SESSION-PACKET.json.
+- Notes: Classification: state / handoff.
+
 ### /30_Generic-Fallbacks
 
 - Purpose: Minimal, portable bridge contract for unknown or fast-changing environments.
 - Main contents: Generic AI-IDE prompts and simplified instructions.
 - Typical changes: Rarely, unless a new universal pattern emerges.
 - Dependencies: None.
-- Notes: Classification: archive / stable reference.
+- Notes: Classification: stable reference / fallback.
 
 ### /docs
 

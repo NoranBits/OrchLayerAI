@@ -1,6 +1,9 @@
 {
   "packet_metadata": {
-    "version": "3.1-G+",
+    "$schema_version": {
+      "type": "string",
+      "const": "3.1"
+    },
     "schema_type": "Session-Packet",
     "project_id": "Required",
     "session_id": "Required"

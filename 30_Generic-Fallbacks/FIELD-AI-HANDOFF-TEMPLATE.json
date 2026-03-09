@@ -1,6 +1,6 @@
 {
   "packet_type": "field-ai-handoff",
-  "version": "1.0",
+  "version": "3.1",
   "handoff_id": "HOF-YYYYMMDD-XXX",
   "source_environment": "string",
   "target_environment": "string",

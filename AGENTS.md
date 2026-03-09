@@ -1,6 +1,6 @@
 # AGENTS.md
 
-Version: 3.0-beta
+Version: v3.1
 Purpose: Universal repository operating instructions for any AI coding environment
 
 ## Mission

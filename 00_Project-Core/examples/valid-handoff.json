@@ -1,0 +1,22 @@
+{
+    "handoff_metadata": {
+        "handoff_id": "HAND-2026-03-09-A",
+        "target_id": "human-reviewer"
+    },
+    "transfer_frame": {
+        "handoff_reason": "Escalating architectural decision on schema unification.",
+        "context_summary": "Core contracts were fragmented across v1.0, v3.0-beta, and v3.1-G+.",
+        "expected_artifact": "Approved v3.1 Protocol spec"
+    },
+    "constraints": [
+        "Do not downgrade core security rules"
+    ],
+    "open_questions": [
+        "Should we support legacy v1.0 packets forever?"
+    ],
+    "critical_links": {
+        "project_root": "c:/dev/git-src/OrchLayerAI",
+        "latest_session_packet": "02_Session-Packets/FILE-AI-SESSION-PACKET.json"
+    },
+    "bootstrap_prompt": "Please review the L1-L2 mapping and confirm if the translation boundary is safe."
+}

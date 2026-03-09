@@ -1,0 +1,6 @@
+{
+    "schema_type": "Session-Packet",
+    "session_frame": {
+        "goal": "Missing metadata and status enum"
+    }
+}
