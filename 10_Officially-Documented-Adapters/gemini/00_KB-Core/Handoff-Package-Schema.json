@@ -1,0 +1,16 @@
+{
+  "handoff_metadata": {
+    "handoff_id": "HOF-YYYYMMDD-XXX",
+    "source_id": "",
+    "target_id": ""
+  },
+  "context_summary": "",
+  "expected_artifact": "",
+  "constraints": [],
+  "bootstrap_prompt": "",
+  "critical_links": {
+    "drive_folder": "",
+    "decision_log": "",
+    "latest_field_packet": ""
+  }
+}

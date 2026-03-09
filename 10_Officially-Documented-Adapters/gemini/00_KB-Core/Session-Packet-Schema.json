@@ -1,0 +1,24 @@
+{
+  "packet_metadata": {
+    "version": "3.1-G+",
+    "schema_type": "Session-Packet",
+    "project_id": "Required",
+    "session_id": "Required"
+  },
+  "session_frame": {
+    "status": "active|paused|completed",
+    "active_scope": "",
+    "current_step": "",
+    "goal": ""
+  },
+  "state_data": {
+    "last_decisions": [],
+    "open_risks": [],
+    "artifacts_created": []
+  },
+  "field_ai_state": {
+    "latest_return_packet": "Drive link or reference",
+    "freshness_notes": "",
+    "drift_detected": false
+  }
+}

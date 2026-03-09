@@ -1,0 +1,45 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "FIELD-AI Capability Manifest Schema",
+    "description": "Generic template for declaring AI runtime capabilities.",
+    "type": "object",
+    "required": [
+        "schema_type",
+        "runtime_identity",
+        "capabilities"
+    ],
+    "properties": {
+        "schema_type": {
+            "type": "string",
+            "const": "Capability-Manifest"
+        },
+        "runtime_identity": {
+            "type": "object",
+            "properties": {
+                "platform_name": {
+                    "type": "string"
+                },
+                "model_version": {
+                    "type": "string"
+                }
+            }
+        },
+        "capabilities": {
+            "type": "object",
+            "additionalProperties": {
+                "type": "object",
+                "properties": {
+                    "enabled": {
+                        "type": "boolean"
+                    },
+                    "quota_limit": {
+                        "type": "string"
+                    },
+                    "notes": {
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    }
+}

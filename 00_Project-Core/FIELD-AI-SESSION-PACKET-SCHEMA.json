@@ -1,0 +1,81 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "FIELD-AI Session Packet Schema",
+    "description": "Standard schema for capturing active session state and progress.",
+    "type": "object",
+    "required": [
+        "$schema_version",
+        "schema_type",
+        "session_metadata",
+        "session_frame"
+    ],
+    "properties": {
+        "$schema_version": {
+            "type": "string",
+            "const": "3.0-beta"
+        },
+        "schema_type": {
+            "type": "string",
+            "const": "Session-Packet"
+        },
+        "session_metadata": {
+            "type": "object",
+            "required": [
+                "session_id",
+                "project_id",
+                "timestamp"
+            ],
+            "properties": {
+                "session_id": {
+                    "type": "string"
+                },
+                "project_id": {
+                    "type": "string"
+                },
+                "timestamp": {
+                    "type": "string",
+                    "format": "date-time"
+                }
+            }
+        },
+        "session_frame": {
+            "type": "object",
+            "required": [
+                "current_objective",
+                "progress_status",
+                "active_context"
+            ],
+            "properties": {
+                "current_objective": {
+                    "type": "string"
+                },
+                "progress_status": {
+                    "type": "string",
+                    "enum": [
+                        "in-progress",
+                        "blocked",
+                        "completed"
+                    ]
+                },
+                "active_context": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "working_notes": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "artifacts_produced": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+---
+description: OrchLayer field-AI bridge rule
+alwaysApply: true
+---
+
+# OrchLayer Bridge Rule
+
+You are working inside a live execution environment.
+
+- inspect current project state before making claims
+- prefer verified findings over confident guesses
+- report structured results for upstream orchestrators
+- expose blockers early
+- suggest the next smallest valid task
+
+If current repository state conflicts with the active task brief, explicitly report:
+`ALERT: Context Drift Detected`

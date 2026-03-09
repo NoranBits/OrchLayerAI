@@ -1,0 +1,69 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "FIELD-AI Handoff Package Schema",
+  "description": "Standard schema for agent-to-agent or agent-to-human transfers.",
+  "type": "object",
+  "required": [
+    "handoff_metadata",
+    "transfer_frame",
+    "critical_links",
+    "bootstrap_prompt"
+  ],
+  "properties": {
+    "handoff_metadata": {
+      "type": "object",
+      "properties": {
+        "handoff_id": {
+          "type": "string"
+        },
+        "target_id": {
+          "type": "string"
+        }
+      }
+    },
+    "transfer_frame": {
+      "type": "object",
+      "required": [
+        "handoff_reason",
+        "expected_artifact"
+      ],
+      "properties": {
+        "handoff_reason": {
+          "type": "string"
+        },
+        "context_summary": {
+          "type": "string"
+        },
+        "expected_artifact": {
+          "type": "string"
+        }
+      }
+    },
+    "constraints": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "open_questions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "critical_links": {
+      "type": "object",
+      "properties": {
+        "project_root": {
+          "type": "string"
+        },
+        "latest_session_packet": {
+          "type": "string"
+        }
+      }
+    },
+    "bootstrap_prompt": {
+      "type": "string"
+    }
+  }
+}

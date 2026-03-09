@@ -1,0 +1,36 @@
+{
+  "packet_type": "field-ai-return",
+  "version": "3.0-beta",
+  "status": "completed|partial|blocked|needs-decision|needs-review|handoff-ready",
+  "objective": "What task was being executed",
+  "environment": {
+    "platform": "copilot|vscode-agent|cursor|windsurf|cline|continue|claude-code|gemini|antigravity|roo-code|generic|other",
+    "workspace": "repo or project identifier",
+    "branch": "current branch if applicable",
+    "source_of_fresh_state": "repo|ide|terminal|browser|project-assistant|other"
+  },
+  "state_summary": {
+    "repo_status": "Current execution-facing state",
+    "files_inspected": [],
+    "files_changed": [],
+    "artifacts_created": [],
+    "checks_run": [],
+    "checks_result": "pass|fail|mixed|not-run"
+  },
+  "actions_taken": [],
+  "findings": {
+    "resolved": [],
+    "unresolved": [],
+    "risks": [],
+    "drift_detected": false,
+    "drift_notes": ""
+  },
+  "questions_for_orchestrator": [],
+  "questions_for_user": [],
+  "recommended_next_tasks": [],
+  "recommended_handoff": {
+    "needed": false,
+    "target": "",
+    "reason": ""
+  }
+}
